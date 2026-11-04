@@ -1,29 +1,23 @@
-/* CLRX shared header. A single source controls navigation on all pages. */
-(function () {
+/* Unified multilingual CLRX navigation */
+(function(){
   "use strict";
-  const script = document.currentScript;
-  const root = script.getAttribute("data-root") || "./";
-  const nav = [
-    ["ABOUT US", "about/"],
-    ["TECHNOLOGY", "technology/"],
-    ["PRODUCTS", "products/"],
-    ["SCIENCE", "science/"],
-    ["CONTACT", "contact/"]
-  ];
-  const items = (mobile) => nav.map(([label, path]) =>
-    '<a href="' + root + path + '"' +
-    (location.pathname.replace(/index\\.html$/, "").includes("/" + path) ? ' aria-current="page"' : "") +
-    '>' + label + '</a>'
-  ).join("");
-  const el = document.getElementById("shared-header");
-  if (!el) return;
-  el.outerHTML = '<header class="site-header" id="header">' +
-    '<div class="header-inner">' +
-      '<a class="header-logo" href="' + root + '" aria-label="CLRX 홈"><img src="' + root + 'assets/clrx-logo.svg" alt="CLRX"></a>' +
-      '<nav class="desktop-nav" aria-label="주 메뉴">' + items(false) + '</nav>' +
-      '<div class="header-side"><span class="lang" title="영문 페이지 준비 중" aria-label="English, coming soon">EN</span></div>' +
-      '<button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileNav">☰</button>' +
-    '</div>' +
-    '<nav class="mobile-nav" id="mobileNav" aria-label="모바일 메뉴">' + items(true) + '</nav>' +
-  '</header>';
+  const script=document.currentScript;
+  const root=script.getAttribute("data-root")||"./";
+  const english=document.documentElement.lang.toLowerCase().startsWith("en");
+  const base=new URL(root,window.location.href).pathname;
+  const route=window.location.pathname.slice(base.length).replace(/^\/+|index\.html$/g,"");
+  const normalized=route.startsWith("en/")?route.slice(3):route;
+  const languageHref=root+(english?"":"en/")+normalized;
+  const prefix=root+(english?"en/":"");
+  const nav=[["ABOUT US","about/"],["TECHNOLOGY","technology/"],["PRODUCTS","products/"],["SCIENCE","science/"],["CONTACT","contact/"]];
+  const items=()=>nav.map(([name,path])=>'<a href="'+prefix+path+'"'+(normalized===path||normalized.startsWith(path) && path==="products/"?' aria-current="page"':'')+'>'+name+'</a>').join("");
+  const node=document.getElementById("shared-header");
+  if(!node)return;
+  node.outerHTML='<header class="site-header" id="header">'+
+   '<div class="header-inner">'+
+   '<a class="header-logo" href="'+prefix+'" aria-label="CLRX home"><img src="'+root+'assets/clrx-logo.svg" alt="CLRX"></a>'+
+   '<nav class="desktop-nav" aria-label="Main navigation">'+items()+'</nav>'+
+   '<div class="header-side"><a class="lang" href="'+languageHref+'" aria-label="'+(english?"한국어 사이트로 이동":"Switch to English")+'">'+(english?"KR":"EN")+'</a></div>'+
+   '<button class="menu-toggle" id="menuToggle" aria-label="'+(english?"Open menu":"메뉴 열기")+'" aria-expanded="false" aria-controls="mobileNav">☰</button>'+
+   '</div><nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">'+items()+'</nav></header>';
 })();
