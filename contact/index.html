@@ -152,12 +152,92 @@ line-height:1.45;min-height:49px;transition:background .2s,color .2s,transform .
 .link-arrow,.home-v2 .link-arrow,.about-v2 .link-arrow{min-height:45px;padding:12px 19px!important;font-size:11px!important}
 }
 </style>
-</head><body><div id="shared-header"></div>
-<script src="../assets/js/header.js" data-root="../"></script><main><section class="subhero"><div class="container"><h1 class="display">CONTACT</h1><p>CLRX 제품 및 비즈니스 파트너십에 관한 문의를 안내합니다.</p></div></section><section class="page-block"><div class="container page-split"><div><span class="page-label">LET'S CONNECT</span><h2 class="page-title">BUILDING WHAT<br>COMES NEXT.</h2><p class="page-text">제품, 유통, 병의원 및 연구 협력에 관한 문의는 CLRX 운영사 카이선셀로 전달해 주세요.</p><a class="contact-link" href="https://www.kaisuncell.com/contact/" target="_blank" rel="noopener noreferrer">KAISUNCELL CONTACT ↗</a></div><div class="page-panel navy"><div class="panel-orb"></div></div></div></section><section class="page-block soft"><div class="container"><span class="page-label">PARTNERSHIP</span><h2 class="page-title">문의 분야</h2><div class="line-items"><div class="line-item"><strong>PRODUCT</strong><p>제품 정보 및 공급 관련 문의.</p></div><div class="line-item"><strong>BUSINESS</strong><p>유통·판매 및 사업 협력.</p></div><div class="line-item"><strong>RESEARCH</strong><p>기술 및 연구 관련 협력.</p></div></div></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a href="../"><img src="../assets/clrx-logo.svg" alt="CLRX"></a><p>Science Beyond Care.<br>Scalp-first, science-driven care.</p></div><nav class="footer-nav" aria-label="푸터 메뉴"><a href="../about/">ABOUT US</a><a href="../technology/">TECHNOLOGY</a><a href="../products/">PRODUCTS</a><a href="../science/">SCIENCE</a><a href="../contact/">CONTACT</a></nav></div><div class="footer-info"><strong>㈜카이선셀 (kaisuncell Co., Ltd.)</strong><br>Water-Soluble CTSF™ 원천기술 기반 바이오 플랫폼 기업<br>본사 : 충청남도 천안시 동남구 단대로 119, 생명공학창업보육센터 310호 (안서동, 단국대학교 천안캠퍼스)<br>서울지사 : 서울특별시 성동구 왕십리로 125, KD운송타워 4층 419호<br>대표자 이메일 : <a href="mailto:planus253@naver.com">planus253@naver.com</a></div><div class="footer-bottom"><span>Copyright © 2026 KAISUNCELL. All rights reserved.</span><span>Corporate information source: <a href="https://www.kaisuncell.com/" target="_blank" rel="noopener noreferrer">kaisuncell.com</a></span></div></div></footer><script>
+<style id="clrx-contact-v2">
+.clrx-contact{background:#fff}
+.clrx-contact .clrx-contact-intro{padding:155px 0 90px;background:linear-gradient(115deg,#09182f,#142f52);color:#fff}
+.clrx-contact .contact-eyebrow{font-size:14px;letter-spacing:.08em;font-weight:500;color:#aec4e1}
+.clrx-contact .clrx-contact-intro h1{font-size:clamp(40px,4vw,60px);line-height:1.15;letter-spacing:-.055em;font-weight:600;margin:18px 0 22px}
+.clrx-contact .clrx-contact-intro p{font-size:16px;color:#d0dcec;line-height:1.9;margin:0}
+.clrx-contact .clrx-contact-content{padding:105px 0 125px}
+.clrx-contact .contact-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(45px,7vw,110px);align-items:start}
+.clrx-contact .contact-aside h2{font-size:clamp(29px,3vw,42px);font-weight:600;letter-spacing:-.05em;line-height:1.35;margin:16px 0 25px}
+.clrx-contact .contact-aside>p{font-size:15px;line-height:1.95;color:#65758b;max-width:470px}
+.clrx-contact .contact-direct{margin-top:48px;border-top:1px solid #d6deea;padding-top:25px}
+.clrx-contact .contact-direct>span{font-size:12px;letter-spacing:.09em;color:#5b7ca8;font-weight:600}
+.clrx-contact .contact-direct>a{font-size:19px;display:block;margin-top:13px;overflow-wrap:anywhere}
+.clrx-contact .contact-direct>p{color:#7b899b;font-size:13px;margin-top:9px}
+.clrx-contact .contact-types{margin-top:42px}
+.clrx-contact .contact-types>div{border-top:1px solid #dce2eb;padding:18px 0}
+.clrx-contact .contact-types strong{font:600 12px Manrope,sans-serif;letter-spacing:.06em;color:#304b70}
+.clrx-contact .contact-types p{color:#738297;font-size:13px;margin:5px 0 0}
+.clrx-contact .contact-form-panel{background:#fff;border:1px solid #dbe2eb;border-radius:18px;padding:clamp(24px,3vw,42px);min-width:0}
+.clrx-contact .contact-form-head h2{font-size:25px;letter-spacing:-.04em;margin:0 0 8px}
+.clrx-contact .contact-form-head p{color:#6d7b8e;font-size:13px;line-height:1.8;margin:0 0 28px}
+.clrx-contact .contact-form-head span,.clrx-contact .contact-field label span{color:#416ca5}
+.clrx-contact .contact-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}
+.clrx-contact .contact-field{display:flex;flex-direction:column;gap:9px;min-width:0}
+.clrx-contact .contact-full{grid-column:1/-1}
+.clrx-contact .contact-field label{font-size:14px;font-weight:600}
+.clrx-contact .contact-field input,.clrx-contact .contact-field select,.clrx-contact .contact-field textarea{font-family:inherit;font-size:14px;border:1px solid #dbe2eb;border-radius:10px;color:#1b2a42;background:#f9fafc;width:100%;padding:14px 15px}
+.clrx-contact .contact-field input,.clrx-contact .contact-field select{height:52px}
+.clrx-contact .contact-field textarea{line-height:1.75;resize:vertical;min-height:172px}
+.clrx-contact .contact-field :is(input,select,textarea):focus{outline:2px solid #8caed2;outline-offset:0;border-color:#527fae}
+.clrx-contact .contact-consent{border-top:1px solid #dbe2eb;margin-top:25px;padding-top:22px}
+.clrx-contact .contact-consent label{display:flex;align-items:start;gap:11px;font-size:14px;line-height:1.6}
+.clrx-contact .contact-consent input{width:17px;height:17px;margin-top:3px;flex-shrink:0;accent-color:#173c6d}
+.clrx-contact .contact-consent a{text-decoration:underline;text-underline-offset:3px}
+.clrx-contact .contact-consent p{font-size:12px;color:#74839a;line-height:1.8;margin:12px 0 0 28px}
+.clrx-contact .contact-actions-row{margin-top:29px;display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+.clrx-contact .contact-actions-row button{border:1px solid #152f54;background:#102c51;color:#fff;border-radius:999px;padding:15px 24px;min-height:50px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:27px;cursor:pointer}
+.clrx-contact .contact-actions-row button:hover{background:#244a79}
+.clrx-contact #c-status{font-size:13px;color:#315f99;line-height:1.6;margin:0}
+.clrx-contact #c-status.error{color:#bd3d3d}
+.clrx-contact .contact-hint{font-size:12px;line-height:1.75;color:#78869b;margin:20px 0 0}
+@media(max-width:900px){.clrx-contact .contact-layout{grid-template-columns:1fr;gap:37px}.clrx-contact .contact-content{padding-top:75px}}
+@media(max-width:760px){.clrx-contact .clrx-contact-intro{padding:118px 0 62px}.clrx-contact .clrx-contact-intro h1{font-size:clamp(37px,9vw,50px)}.clrx-contact .clrx-contact-intro p{font-size:14px}.clrx-contact .clrx-contact-content{padding:67px 0 75px}.clrx-contact .contact-fields{grid-template-columns:1fr}.clrx-contact .contact-form-panel{padding:24px 18px}.clrx-contact .contact-aside h2{font-size:31px}}
+</style></head><body><div id="shared-header"></div>
+<script src="../assets/js/header.js" data-root="../"></script><main class="clrx-contact">
+<section class="clrx-contact-intro"><div class="container"><span class="contact-eyebrow">CONTACT US</span><h1>LET'S CONNECT.</h1><p>CLRX 제품 및 비즈니스 협력에 관한 이야기를 들려주세요.<br>문의 내용을 확인할 수 있도록 카이선셀 담당자에게 전달하는 방법을 안내합니다.</p></div></section>
+<section class="clrx-contact-content"><div class="container contact-layout">
+<div class="contact-aside"><span class="page-label">BUSINESS INQUIRY</span><h2>함께 만들어갈<br>가능성을 이야기해주세요.</h2><p>제품 정보부터 공급·유통, 병의원 협력과 연구·개발 제안까지 다양한 문의를 환영합니다.</p>
+<div class="contact-direct"><span>BUSINESS CONTACT</span><a href="mailto:bizops@kaisuncell.com">bizops@kaisuncell.com</a><p>카이선셀 사업 문의 담당 · 송지은</p></div>
+<div class="contact-types"><div><strong>PRODUCT</strong><p>제품 정보 및 공급 문의</p></div><div><strong>PARTNERSHIP</strong><p>유통·병의원·사업 협력</p></div><div><strong>RESEARCH</strong><p>제품 개발 및 연구 협력</p></div></div></div>
+<div class="contact-form-panel"><div class="contact-form-head"><h2>문의하기</h2><p>필수 정보를 작성한 뒤 이메일 작성 화면에서 전송해 주세요. <span>*</span> 표시는 필수 항목입니다.</p></div>
+<form id="clrx-inquiry" novalidate>
+<div class="contact-fields">
+<div class="contact-field"><label for="c-type">문의 유형 <span>*</span></label><select id="c-type" name="type" required><option value="">선택해 주세요</option><option>제품 정보·공급</option><option>유통·판매</option><option>병의원 파트너십</option><option>연구·제품 개발</option><option>기타 문의</option></select></div>
+<div class="contact-field"><label for="c-company">회사·소속</label><input id="c-company" name="company" maxlength="120" autocomplete="organization" placeholder="회사 또는 소속명"></div>
+<div class="contact-field"><label for="c-name">담당자명 <span>*</span></label><input id="c-name" name="name" maxlength="80" autocomplete="name" required placeholder="성함을 입력해 주세요"></div>
+<div class="contact-field"><label for="c-email">이메일 <span>*</span></label><input id="c-email" name="email" type="email" maxlength="200" autocomplete="email" required placeholder="example@company.com"></div>
+<div class="contact-field contact-full"><label for="c-phone">연락처</label><input id="c-phone" name="phone" type="tel" maxlength="30" autocomplete="tel" placeholder="연락 가능한 번호"></div>
+<div class="contact-field contact-full"><label for="c-subject">문의 제목 <span>*</span></label><input id="c-subject" name="subject" maxlength="150" required placeholder="문의 제목을 입력해 주세요"></div>
+<div class="contact-field contact-full"><label for="c-message">문의 내용 <span>*</span></label><textarea id="c-message" name="message" rows="7" minlength="10" maxlength="5000" required placeholder="문의 내용이나 제안 사항, 예상 일정 등을 남겨주세요."></textarea></div>
+</div>
+<div class="contact-consent"><label><input id="c-privacy" type="checkbox" required><span>문의 응대를 위한 개인정보 수집·이용에 동의합니다. <a href="https://www.kaisuncell.com/privacy/" target="_blank" rel="noopener noreferrer">개인정보처리방침 보기</a></span></label><p>수집 항목: 성명, 이메일 및 사용자가 입력한 연락처·회사명·문의 내용<br>이용 목적: 문의 확인 및 답변 / 보관 기간: 개인정보처리방침 및 운영 정책에 따름</p></div>
+<div class="contact-actions-row"><button type="submit" id="c-submit">이메일로 문의하기 <span aria-hidden="true">↗</span></button><p id="c-status" role="status" aria-live="polite"></p></div>
+<p class="contact-hint">이 양식은 서버에 직접 접수되지 않습니다. 버튼을 누르면 입력한 내용이 이메일 작성 창에 채워지며, 사용자가 직접 전송해야 합니다. 메일 앱이 열리지 않으면 위 이메일 주소로 문의해 주세요.</p>
+</form></div>
+</div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a href="../"><img src="../assets/clrx-logo.svg" alt="CLRX"></a><p>Science Beyond Care.<br>Scalp-first, science-driven care.</p></div><nav class="footer-nav" aria-label="푸터 메뉴"><a href="../about/">ABOUT US</a><a href="../technology/">TECHNOLOGY</a><a href="../products/">PRODUCTS</a><a href="../science/">SCIENCE</a><a href="../contact/">CONTACT</a></nav></div><div class="footer-info"><strong>㈜카이선셀 (kaisuncell Co., Ltd.)</strong><br>Water-Soluble CTSF™ 원천기술 기반 바이오 플랫폼 기업<br>본사 : 충청남도 천안시 동남구 단대로 119, 생명공학창업보육센터 310호 (안서동, 단국대학교 천안캠퍼스)<br>서울지사 : 서울특별시 성동구 왕십리로 125, KD운송타워 4층 419호<br>대표자 이메일 : <a href="mailto:planus253@naver.com">planus253@naver.com</a></div><div class="footer-bottom"><span>Copyright © 2026 KAISUNCELL. All rights reserved.</span><span>Corporate information source: <a href="https://www.kaisuncell.com/" target="_blank" rel="noopener noreferrer">kaisuncell.com</a></span></div></div></footer><script>
 const header=document.getElementById('header');const toggle=document.getElementById('menuToggle');const mobile=document.getElementById('mobileNav');
 function closeMenu(){mobile.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','메뉴 열기');toggle.textContent='☰'}
 toggle.addEventListener('click',()=>{const open=!mobile.classList.contains('open');mobile.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');toggle.textContent=open?'×':'☰'});
 mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>35),{passive:true});
 window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
+</script><script id="clrx-contact-form-js">
+(function(){
+const form=document.getElementById('clrx-inquiry');if(!form)return;
+const status=document.getElementById('c-status');
+const value=(name)=>String(new FormData(form).get(name)||'').trim();
+form.addEventListener('submit',function(event){
+event.preventDefault();status.textContent='';status.classList.remove('error');
+if(!form.reportValidity()){status.textContent='필수 입력 항목과 이메일 형식을 확인해 주세요.';status.classList.add('error');return;}
+if(!document.getElementById('c-privacy').checked){status.textContent='개인정보 수집·이용 동의가 필요합니다.';status.classList.add('error');return;}
+const subject='[CLRX 문의 / '+value('type')+'] '+value('subject');
+const body=['CLRX 홈페이지 문의','', '문의 유형: '+value('type'),'회사·소속: '+value('company'),'담당자명: '+value('name'),'이메일: '+value('email'),'연락처: '+value('phone'),'','문의 제목: '+value('subject'),'','문의 내용:',value('message')].join('\n');
+const url='mailto:bizops@kaisuncell.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+status.textContent='이메일 작성 화면이 열리면 내용을 확인하고 직접 전송해 주세요. 아직 접수 완료된 상태가 아닙니다.';
+window.location.href=url;
+});
+})();
 </script></body></html>
