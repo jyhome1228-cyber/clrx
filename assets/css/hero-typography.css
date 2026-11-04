@@ -1,6 +1,6 @@
 /* Shared CLRX hero heading scale — 80% of prior size, medium weight.
    Kept separate so every page uses the same typography settings. */
-:where(.home-v2 .hero, .about-v2 .subhero, .tech-v2 .tech-hero, .product-v2 .product-hero, .science-v2 .sci-hero, .clrx-contact .clrx-contact-intro) h1 {
+:is(.home-v2 .hero, .about-v2 .subhero, .tech-v2 .tech-hero, .product-v2 .product-hero, .science-v2 .sci-hero, .clrx-contact .clrx-contact-intro) h1 {
   font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif !important;
   font-size: clamp(33px, 3.05vw, 46px) !important;
   font-weight: 500 !important;
@@ -12,7 +12,7 @@
   font-weight: 500 !important;
 }
 @media (max-width: 760px) {
-  :where(.home-v2 .hero, .about-v2 .subhero, .tech-v2 .tech-hero, .product-v2 .product-hero, .science-v2 .sci-hero, .clrx-contact .clrx-contact-intro) h1 {
+  :is(.home-v2 .hero, .about-v2 .subhero, .tech-v2 .tech-hero, .product-v2 .product-hero, .science-v2 .sci-hero, .clrx-contact .clrx-contact-intro) h1 {
     font-size: clamp(30px, 7.2vw, 39px) !important;
     font-weight: 500 !important;
     line-height: 1.2 !important;
