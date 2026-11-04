@@ -1,0 +1,29 @@
+/* CLRX global motion system - understated premium interactions */
+:root{--clrx-motion-distance:22px;--clrx-motion-duration:760ms;--clrx-motion-ease:cubic-bezier(.22,1,.36,1)}
+html{scroll-behavior:smooth}
+body{overflow-x:clip}
+.site-header{transition:background-color .28s ease,box-shadow .28s ease,border-color .28s ease}
+.site-header.scrolled{background:rgba(6,19,39,.98)!important;box-shadow:0 10px 32px rgba(0,0,0,.12)}
+/* Reveal is only enabled through JS, so pages remain readable without scripting. */
+.clrx-motion-ready .clrx-reveal:not(.clrx-visible){opacity:0;transform:translate3d(0,var(--clrx-motion-distance),0)}
+.clrx-motion-ready .clrx-reveal{transition:opacity var(--clrx-motion-duration) var(--clrx-motion-ease),transform var(--clrx-motion-duration) var(--clrx-motion-ease);transition-delay:var(--clrx-motion-delay,0ms)}
+.clrx-motion-ready .clrx-reveal.clrx-visible{opacity:1;transform:translate3d(0,0,0)}
+/* Responsive imagery: restrained zoom on editorial photos and product cards. */
+main :is(.home-figure,.tech-image,.sci-figure,.story-image-wrap,.p-card-image,.p-visual,.product-image,.care-card,.product-card,.home-products .product-image){overflow:hidden}
+main :is(.home-figure,.tech-image,.sci-figure,.p-card-image,.p-visual,.product-image,.care-card,.product-card) img{transition:transform 850ms var(--clrx-motion-ease),filter 600ms ease}
+@media(hover:hover) and (pointer:fine){
+ main :is(.home-figure,.tech-image,.sci-figure,.p-card-image,.p-visual,.care-card,.product-card):hover img{transform:scale(1.035)}
+ main :is(.product-card,.p-card,.page-card,.science-item,.future-card,.p-future){transition:transform 350ms var(--clrx-motion-ease),box-shadow 350ms ease}
+ main :is(.product-card,.p-card,.page-card,.science-item,.future-card,.p-future):hover{transform:translateY(-4px);box-shadow:0 15px 40px rgba(9,27,52,.085)}
+}
+main :is(a.link-arrow,.contact-link,.contact-actions a,.p-related a,.contact-actions-row button){transition:color .25s ease,background-color .25s ease,border-color .25s ease,transform .3s var(--clrx-motion-ease),box-shadow .3s ease}
+@media(hover:hover) and (pointer:fine){
+ main :is(a.link-arrow,.contact-link,.contact-actions a,.p-related a,.contact-actions-row button):hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(9,27,52,.12)}
+}
+:where(a,button,input,select,textarea):focus-visible{outline:2px solid #83a6d7;outline-offset:4px}
+@media(max-width:760px){:root{--clrx-motion-distance:12px;--clrx-motion-duration:560ms}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .clrx-motion-ready .clrx-reveal,.clrx-motion-ready .clrx-reveal:not(.clrx-visible){opacity:1!important;transform:none!important;transition:none!important}
+ main img,.site-header,main a,main button,main article{transition:none!important;animation:none!important;transform:none!important}
+}
