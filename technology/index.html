@@ -196,6 +196,7 @@ line-height:1.45;min-height:49px;transition:background .2s,color .2s,transform .
 .tech-v2 .tech-flow-line span{font-size:12px}
 }
 </style><link rel="stylesheet" href="../assets/css/hero-typography.css?v=20261105a">
+<link rel="stylesheet" href="../assets/css/motion.css?v=20261105a">
 </head><body><div id="shared-header"></div>
 <script src="../assets/js/header.js" data-root="../"></script><main class="tech-v2">
 <section class="tech-hero" aria-labelledby="tech-title">
@@ -226,4 +227,5 @@ toggle.addEventListener('click',()=>{const open=!mobile.classList.contains('open
 mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>35),{passive:true});
 window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
-</script></body></html>
+</script><script defer src="../assets/js/motion.js?v=20261105a"></script>
+</body></html>
