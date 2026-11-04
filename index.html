@@ -212,6 +212,7 @@ line-height:1.45;min-height:49px;transition:background .2s,color .2s,transform .
 }
 </style>
 <link rel="stylesheet" href="./assets/css/hero-typography.css?v=20261105a">
+<link rel="stylesheet" href="./assets/css/motion.css?v=20261105a">
 </head>
 <body>
 <div id="shared-header"></div>
@@ -247,4 +248,5 @@ mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>35),{passive:true});
 window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 </script>
+<script defer src="./assets/js/motion.js?v=20261105a"></script>
 </body></html>
