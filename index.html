@@ -33,6 +33,51 @@
 @media(max-width:760px){.container,.header-inner{width:calc(100% - 40px)}.site-header{height:70px}.header-logo img{width:120px}.desktop-nav{display:none}.menu-toggle{display:block}.mobile-nav{display:none;position:fixed;top:70px;left:0;right:0;background:#08172df7;padding:20px 28px 36px;border-top:1px solid #ffffff20;flex-direction:column;gap:0}.mobile-nav.open{display:flex}.mobile-nav a{padding:16px 0;border-bottom:1px solid #ffffff24;font:600 14px Manrope,sans-serif;letter-spacing:.1em}.hero{min-height:760px;height:100svh;align-items:end}.hero-content{padding-bottom:58px}.hero h1{font-size:clamp(54px,11.2vw,78px);max-width:90%;margin:16px 0}.hero .desc{max-width:310px;font-size:13px;line-height:1.8}.hero-meta{align-items:start}.hero-index{display:none}.chrome{width:125vw;height:65vh;top:6%;right:-45%}.bottle-scene{right:6%;bottom:22%;height:37%;width:60%}.scene-note{font-size:8px;right:6%;bottom:20%}.section{padding:78px 0}.section-head{display:block;margin-bottom:32px}.section-head h2{margin-top:12px;font-size:47px}.section-head p{font-size:14px;margin-top:22px}.intro-layout,.tech-grid{grid-template-columns:1fr}.intro-copy{padding-top:0}.intro h2{font-size:60px}.intro-stats{margin-top:45px;gap:8px}.intro-stats strong{font-size:12px}.tech-art{height:290px;order:-1}.tech-orb{width:180px}.tech-copy h3{font-size:32px}.tech-flow{flex-wrap:wrap}.tech-flow div{min-width:40%}.product-grid{grid-template-columns:1fr;gap:20px}.product-image{height:380px}.product-body p{min-height:auto}.protocol-grid{grid-template-columns:1fr}.protocol-step,.protocol-step:not(:first-child){border-right:0;border-bottom:1px solid #d6dfe9;min-height:auto;padding:30px 0}.protocol-step h3{margin-top:20px}.science-grid{grid-template-columns:1fr}.science-item{min-height:auto;padding:30px}.science-item h3{margin-top:25px}.future-grid{grid-template-columns:1fr}.future-card{min-height:320px;padding:25px}.contact h2{font-size:56px}.footer-top,.footer-bottom{flex-direction:column}.footer-nav{flex-wrap:wrap;gap:18px}.footer-top{padding-bottom:25px}.footer-info{font-size:11px}.site-footer{padding-top:44px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
+
+<!-- Kaisuncell-aligned layout system: shared content rhythm, spacing and typography -->
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+:root{--max:1440px}
+body{font-family:Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:16px;line-height:1.7}
+.container,.header-inner{width:min(calc(100% - 80px),1440px)}
+.site-header{height:82px}
+.site-header .desktop-nav{gap:33px}
+.site-header .desktop-nav a{font-size:12px;letter-spacing:.075em}
+.site-header .header-logo img{width:145px}
+.section{padding:125px 0}
+.section-head{gap:50px;margin-bottom:56px}
+.section-head h2{font-size:clamp(36px,4vw,64px);line-height:1.2;letter-spacing:-.05em}
+.section-head p{max-width:420px;margin:0;font-size:16px;line-height:1.75}
+.smallcap{letter-spacing:.18em}
+.intro h2{font-size:clamp(48px,6vw,90px)}
+.intro-copy h3{font-size:clamp(25px,2.6vw,40px)}
+.intro-copy p,.tech-copy p{font-size:16px;line-height:1.85}
+.technology .section-head h2{font-size:clamp(36px,4vw,64px)}
+.product-body h3{font-size:clamp(22px,2vw,30px)}
+.product-body p{font-size:14px}
+.protocol-step h3{font-size:26px}
+.contact h2{font-size:clamp(50px,5.5vw,88px)}
+.contact-actions a{border-radius:999px;padding:15px 25px;font-weight:600;transition:background .2s ease,transform .2s ease}
+.contact-actions a:hover{transform:translateY(-2px)}
+.site-footer{padding:62px 0 30px}
+.footer-top{padding-bottom:60px}
+.footer-info{font-size:12px}
+.footer-bottom{padding-top:25px}
+@media(max-width:760px){
+.container,.header-inner{width:min(calc(100% - 36px),1440px)}
+.site-header{height:68px}
+.site-header .header-logo img{width:125px}
+.mobile-nav{top:68px}
+.section{padding:75px 0}
+.section-head{margin-bottom:30px}
+.section-head h2,.technology .section-head h2{font-size:clamp(34px,9vw,52px)}
+.section-head p{font-size:15px;margin-top:18px}
+.intro h2{font-size:clamp(48px,12vw,64px)}
+.intro-copy p,.tech-copy p{font-size:15px}
+.site-footer{padding:48px 0 26px}
+.footer-top{padding-bottom:26px}
+}
+</style>
 </head>
 <body>
 <header class="site-header" id="header">
