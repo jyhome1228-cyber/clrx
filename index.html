@@ -173,6 +173,44 @@ body{font-family:Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;fon
 .home-v2 .home-end .container{align-items:start;flex-direction:column}
 }
 </style>
+<style id="clrx-type-refinement-v3">
+/* Unified, restrained heading scale */
+.hero h1,.home-v2 .hero h1{font-size:clamp(40px,4vw,62px)!important;line-height:1.16!important;letter-spacing:-.05em}
+.subhero h1,.about-v2 .subhero h1{font-size:clamp(38px,3.8vw,58px)!important;line-height:1.16!important;letter-spacing:-.045em}
+.page-title,.about-v2 .story-copy .page-title{font-size:clamp(29px,2.9vw,43px)!important;line-height:1.25!important}
+.section-head h2,.technology .section-head h2,.home-v2 .home-section .section-head h2{font-size:clamp(30px,3vw,44px)!important;line-height:1.22!important}
+.home-v2 .home-split h2,.home-v2 .home-technology h2,.intro h2{font-size:clamp(32px,3.1vw,46px)!important;line-height:1.2!important}
+.contact h2,.tech-copy h3{font-size:clamp(30px,3vw,45px)!important}
+.future-card h3{font-size:clamp(25px,2.4vw,34px)!important}
+/* Make actual section labels prominent instead of decorative */
+.smallcap.eyebrow,.page-label,.home-v2 .home-technology .eyebrow,.about-v2 .about-approach .page-label{
+font-family:Pretendard,"Apple SD Gothic Neo",sans-serif;
+font-size:20px!important;line-height:1.4;letter-spacing:.065em!important;font-weight:700!important;
+}
+.smallcap.eyebrow{display:block;margin-bottom:21px}
+.page-label{display:block}
+.home-v2 .hero-kicker{display:none}
+.page-breadcrumb{display:none!important}
+/* Rounded CTA in every page (no underlined link style) */
+.link-arrow,.home-v2 .link-arrow,.about-v2 .link-arrow{
+display:inline-flex;align-items:center;justify-content:center;gap:22px;
+padding:14px 23px!important;border:1px solid currentColor!important;border-radius:999px!important;
+border-bottom:1px solid currentColor!important;text-decoration:none!important;
+font-size:12px!important;letter-spacing:.045em!important;font-weight:700;
+line-height:1.45;min-height:49px;transition:background .2s,color .2s,transform .2s;
+}
+.link-arrow::after{content:"↗";font-size:17px;line-height:1}
+.link-arrow:hover{transform:translateY(-2px);background:rgba(130,158,192,.15)}
+@media(max-width:760px){
+.hero h1,.home-v2 .hero h1{font-size:clamp(38px,9vw,51px)!important}
+.subhero h1,.about-v2 .subhero h1{font-size:clamp(36px,8.2vw,48px)!important}
+.page-title,.about-v2 .story-copy .page-title{font-size:clamp(28px,7.1vw,36px)!important}
+.section-head h2,.technology .section-head h2,.home-v2 .home-section .section-head h2{font-size:clamp(28px,7.5vw,38px)!important}
+.home-v2 .home-split h2,.home-v2 .home-technology h2,.intro h2{font-size:clamp(29px,7.5vw,39px)!important}
+.smallcap.eyebrow,.page-label,.home-v2 .home-technology .eyebrow,.about-v2 .about-approach .page-label{font-size:16px!important;letter-spacing:.035em!important}
+.link-arrow,.home-v2 .link-arrow,.about-v2 .link-arrow{min-height:45px;padding:12px 19px!important;font-size:11px!important}
+}
+</style>
 </head>
 <body>
 <div id="shared-header"></div>
