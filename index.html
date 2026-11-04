@@ -113,28 +113,91 @@ body{font-family:Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;fon
 .page-title{font-size:clamp(30px,8vw,42px)}
 }
 </style>
-<link rel="stylesheet" href="./assets/css/header.css?v=20261104a">\n</head>
+<link rel="stylesheet" href="./assets/css/header.css?v=20261104a">\n<style id="clrx-home-v2">
+/* Four-section home: presentation aligned with Kaisuncell's 1440px grid */
+.home-v2 .hero{height:min(900px,100svh);min-height:660px;max-height:none;display:flex;align-items:center;background:#08172d}
+.home-v2 .hero::before,.home-v2 .hero::after{content:"";position:absolute;inset:0;width:auto;height:auto;filter:none;pointer-events:none}
+.home-v2 .hero::before{background:linear-gradient(90deg,rgba(3,12,26,.93) 0%,rgba(4,15,31,.72) 38%,rgba(3,13,28,.05) 100%);z-index:1}
+.home-v2 .hero::after{background:linear-gradient(0deg,rgba(3,12,26,.32),transparent 38%);z-index:1}
+.home-v2 .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 44%;filter:saturate(.77)}
+.home-v2 .hero-content{padding:95px 0 65px;position:relative;z-index:2}
+.home-v2 .hero h1{font-size:clamp(49px,5.6vw,84px);letter-spacing:-.058em;max-width:620px;margin:18px 0 27px}
+.home-v2 .hero .desc{font-size:16px;max-width:560px;color:#e3eaf4;line-height:1.85}
+.home-v2 .hero-copy{max-width:610px}
+.home-v2 .hero-kicker{font-size:12px;color:#becfe5;letter-spacing:.13em;font-weight:600}
+.home-v2 .hero-bottom-note{font-size:11px;letter-spacing:.09em;color:#d4deee8c;position:absolute;bottom:35px;right:max(40px,calc((100vw - 1440px)/2));z-index:3}
+.home-v2 .home-section{padding:115px 0}
+.home-v2 .home-section .section-head{margin:0 0 42px}
+.home-v2 .home-section .section-head h2{font-size:clamp(34px,3.5vw,54px);margin:15px 0 0;line-height:1.15}
+.home-v2 .home-section .section-head p{line-height:1.85}
+.home-v2 .home-about{background:#fff}
+.home-v2 .home-split{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:8%;align-items:center}
+.home-v2 .home-split h2{font-size:clamp(36px,4vw,60px);margin:18px 0 28px;line-height:1.14}
+.home-v2 .home-split h3{font-size:clamp(19px,2.2vw,30px);font-weight:500;letter-spacing:-.04em;line-height:1.5;margin:0 0 20px}
+.home-v2 .home-split p{font-size:15px;line-height:1.95;color:#647187;margin:0 0 16px}
+.home-v2 .home-figure{margin:0;background:#dde4ee;overflow:hidden;min-height:360px}
+.home-v2 .home-figure img{width:100%;height:100%;min-height:450px;object-fit:cover;object-position:center}
+.home-v2 .home-technology{background:#0a1d38;color:#fff}
+.home-v2 .home-technology .home-split{grid-template-columns:1.05fr .95fr}
+.home-v2 .home-technology .home-figure{background:#19334e}
+.home-v2 .home-technology .home-split p{color:#bfcde0}
+.home-v2 .home-technology .eyebrow{color:#9ab5d8}
+.home-v2 .home-technology h2{font-size:clamp(36px,4vw,60px)}
+.home-v2 .home-technology .tech-tokens{display:flex;flex-wrap:wrap;gap:11px;margin:24px 0 34px;color:#b3c8e0;font-size:11px;letter-spacing:.08em}
+.home-v2 .home-technology .tech-tokens span{border-top:1px solid #94aaca7c;padding-top:12px;min-width:115px}
+.home-v2 .home-products{background:#f1f3f6}
+.home-v2 .home-products .product-grid{gap:20px}
+.home-v2 .home-products .product-image{height:365px}
+.home-v2 .home-products .product-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.home-v2 .home-products .product-image::after{display:none}
+.home-v2 .home-products .product-body{min-height:185px}
+.home-v2 .home-products .product-body h3{font-size:clamp(19px,1.9vw,26px)}
+.home-v2 .home-products .section-head p{font-size:15px}
+.home-v2 .home-end{background:#0b1b34;color:#dce7f4;padding:36px 0}
+.home-v2 .home-end .container{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.home-v2 .home-end p{margin:0;font-size:15px}
+@media(max-width:760px){
+.home-v2 .hero{height:79svh;min-height:620px}
+.home-v2 .hero-photo{object-position:59% center}
+.home-v2 .hero::before{background:linear-gradient(90deg,#031020dc,#0310208a 66%,#03102044)}
+.home-v2 .hero-content{padding:100px 0 35px}
+.home-v2 .hero h1{font-size:clamp(43px,9.7vw,60px)}
+.home-v2 .hero .desc{font-size:14px;max-width:300px}
+.home-v2 .hero-bottom-note{bottom:18px;right:18px;font-size:9px}
+.home-v2 .home-section{padding:73px 0}
+.home-v2 .home-split,.home-v2 .home-technology .home-split{grid-template-columns:1fr;gap:28px}
+.home-v2 .home-split h2,.home-v2 .home-technology h2{font-size:clamp(32px,8.3vw,46px)}
+.home-v2 .home-figure img{min-height:265px;max-height:390px}
+.home-v2 .home-products .product-grid{grid-template-columns:1fr;gap:18px}
+.home-v2 .home-products .product-image{height:330px}
+.home-v2 .home-end .container{align-items:start;flex-direction:column}
+}
+</style>
+</head>
 <body>
 <div id="shared-header"></div>
 <script src="./assets/js/header.js" data-root="./"></script>
-<main>
+<main class="home-v2">
 <section class="hero" id="home" aria-label="CLRX 메인 비주얼">
-  <div class="hero-lines"></div><div class="chrome" aria-hidden="true"><div class="ring one"></div><div class="ring two"></div></div>
-  <div class="bottle-scene" aria-hidden="true"><div class="bottle"><div class="bottle-label"><strong>CLRX</strong><span>SCALP<br>PROTOCOL</span></div></div><div class="bottle tall"><div class="bottle-label"><strong>CLRX</strong><span>SCIENCE FOR<br>SCALP & SKIN</span></div></div></div>
-  <div class="container hero-content"><span class="smallcap eyebrow">CLRX · SCIENCE-DRIVEN CARE</span><h1 class="display">SCIENCE<br>BEYOND<br>CARE.</h1><div class="hero-meta"><div><p class="desc">두피에서 피부까지,<br>과학으로 설계하는 새로운 케어의 기준.</p><a class="link-arrow" href="./about/">DISCOVER CLRX</a></div><span class="hero-index">BRAND EXPERIENCE</span></div></div>
-  <span class="scene-note">CONCEPT VISUAL — ACTUAL PRODUCT IMAGES TO FOLLOW</span>
+  <img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261104-042043-image-2-1-3249a8d7.webp" alt="CLRX 블랙 용기와 실버 톤 제품 연출 사진" class="hero-photo" loading="eager" decoding="async">
+  <div class="container hero-content"><div class="hero-copy"><span class="hero-kicker">CLRX · SCIENCE-DRIVEN CARE</span><h1 class="display">SCIENCE<br>BEYOND CARE.</h1><p class="desc">과학으로 설계하는 새로운 케어의 기준.<br>탈모·두피·피부를 위한 기술 기반 프리미엄 케어 브랜드, CLRX.</p><a class="link-arrow" href="./about/">DISCOVER CLRX</a></div></div>
 </section>
-<section class="section intro" id="brand"><div class="container"><span class="smallcap eyebrow">BRAND PHILOSOPHY</span><div class="intro-layout"><h2 class="display">CARE<br>WITH<br>PURPOSE.</h2><div class="intro-copy"><h3>두피를 먼저 이해하고,<br>피부까지 넓혀가는 케어.</h3><p>CLRX는 탈모·두피·피부를 위한 기술 기반 케어 브랜드입니다. 제품을 넘어, 각 단계의 관리 경험이 자연스럽게 연결되도록 연구합니다.</p><p>시술 후 케어에 대한 깊은 관심에서 출발해 일상 속 두피·피부 관리로 이어지는 새로운 기준을 제안합니다.</p></div></div><div class="intro-stats"><div><span>FOCUS</span><strong>SCALP FIRST</strong></div><div><span>APPROACH</span><strong>SCIENCE DRIVEN</strong></div><div><span>VISION</span><strong>SCALP & SKIN</strong></div></div></div></section>
-<section class="section technology" id="technology"><div class="container"><div class="section-head"><div><span class="smallcap eyebrow">CORE TECHNOLOGY</span><h2 class="display">THE SCIENCE<br>BEHIND CLRX.</h2></div><p>원료와 배합에 관한 연구를 바탕으로 두피와 피부 케어의 가능성을 탐구합니다.</p></div><div class="tech-grid"><div class="tech-art" aria-label="바이오 소재 기술을 표현한 추상 그래픽"><div class="tech-orb"></div></div><div class="tech-copy"><span class="smallcap eyebrow">CTSol-CLRX™</span><h3>기술을 이야기하기보다,<br>케어의 기준을 설계합니다.</h3><p>CLRX는 CTSol-CLRX™를 브랜드의 핵심 기술 아이덴티티로 소개합니다. 세부 원료 및 배합 기전, 시험 결과는 검토된 연구자료에 따라 단계적으로 공개할 예정입니다.</p><div class="tech-flow"><div><b>MATERIAL</b>원료 연구</div><div><b>FORMULATION</b>배합 설계</div><div><b>APPLICATION</b>제품 적용</div></div></div></div></div></section>
-<section class="section products" id="products"><div class="container"><div class="section-head"><div><span class="smallcap eyebrow">PRODUCT COLLECTION</span><h2 class="display">THE S-SERIES.</h2></div><p>각기 다른 관리 단계가 하나의 흐름을 완성하도록 설계된 CLRX 두피 케어 컬렉션.</p></div><div class="product-grid">
-<article class="product-card"><div class="product-image"><span class="product-code">S-01</span><div class="mini-bottle"><span>CLRX</span></div><span class="product-tag">CONCEPT RENDER</span></div><div class="product-body"><span class="category">STEP 01 / CLEANSE</span><h3>Micro-Prep Purifier</h3><p>청결한 두피 컨디션을 위한 세정 단계.</p><a class="link-arrow" href="./products/s-01/">VIEW PRODUCT</a></div></article>
-<article class="product-card"><div class="product-image"><span class="product-code">S-02</span><div class="mini-bottle tonic"><span>CLRX</span></div><span class="product-tag">CONCEPT RENDER</span></div><div class="product-body"><span class="category">STEP 02 / CONDITION</span><h3>Scalp Lock-in Tonic</h3><p>두피 컨디셔닝을 위한 토닉 단계.</p><a class="link-arrow" href="./products/s-02/">VIEW PRODUCT</a></div></article>
-<article class="product-card"><div class="product-image"><span class="product-code">S-02a</span><div class="mini-bottle ampoule"><span>CLRX</span></div><span class="product-tag">CONCEPT RENDER</span></div><div class="product-body"><span class="category">STEP 03 / INTENSIVE CARE</span><h3>Scalp Lock-in Ampoule</h3><p>집중 보습과 두피 컨디셔닝을 위한 앰플 단계.</p><a class="link-arrow" href="./products/s-02a/">VIEW PRODUCT</a></div></article>
-</div><p class="science-disclaimer">※ 현재 이미지는 최종 패키지 사진이 아닌 레이아웃 검토용 그래픽입니다. 출시·용량·기능성 표기는 최종 제품 승인자료에 맞춰 확정합니다.</p></div></section>
-<section class="section protocol" id="protocol"><div class="container"><div class="section-head"><div><span class="smallcap eyebrow">THE PROTOCOL</span><h2 class="display">A THOUGHTFUL<br>ROUTINE.</h2></div><p>한 가지 제품보다, 케어의 흐름을 생각합니다. 제품별 사용 방법과 순서는 출시 시 최종 표시사항을 따릅니다.</p></div><div class="protocol-grid"><div class="protocol-step"><b>PREP</b><h3>두피 세정</h3><p>Micro-Prep Purifier<br>두피와 모발을 청결하게 관리하는 시작 단계.</p></div><div class="protocol-step"><b>LOCK-IN</b><h3>두피 컨디셔닝</h3><p>Scalp Lock-in Tonic<br>일상적인 두피 케어를 이어가는 단계.</p></div><div class="protocol-step"><b>INTENSIVE</b><h3>집중 보습 케어</h3><p>Scalp Lock-in Ampoule<br>필요에 맞춰 사용하는 집중 관리 단계.</p></div></div></div></section>
-<section class="section science" id="science"><div class="container"><div class="section-head"><div><span class="smallcap eyebrow">RESEARCH & EVIDENCE</span><h2 class="display">GROUNDED<br>IN RESEARCH.</h2></div><p>연구의 단계와 적용 범위를 구분해, 확인된 정보만 정확하게 전달합니다.</p></div><div class="science-grid"><article class="science-item"><span>RESEARCH</span><h3>소재와 배합 연구</h3><p>원천 소재를 기반으로 한 배합 및 적용 가능성 연구를 소개합니다.</p></article><article class="science-item"><span>NON-CLINICAL</span><h3>비임상 시험</h3><p>IR 자료에 기재된 단국대 비임상 연구를 별도 근거 자료로 구분해 안내합니다.</p></article><article class="science-item"><span>VALIDATION</span><h3>안전성 검토</h3><p>실제 시험 대상과 제품을 구별해 안전성 자료의 적용 범위를 명시합니다.</p></article></div><p class="science-disclaimer">연구자료의 원료 시험 결과는 완제품의 효능·효과를 직접 의미하지 않습니다. 정량 연구 결과 및 임상 이미지의 대외 공개는 별도 검수 후 반영합니다.</p></div></section>
-<section class="section future"><div class="container"><div class="section-head"><div><span class="smallcap eyebrow">FUTURE COLLECTION</span><h2 class="display">BEYOND<br>THE SCALP.</h2></div><p>두피에서 피부로. CLRX가 연구하는 미래의 케어 영역입니다.</p></div><div class="future-grid"><div class="future-card"><small>P-SERIES / PLANNED</small><div><h3>Post-Procedural<br>Recovery</h3><p>피부 시술 후 케어를 위한 제품 라인업. 향후 출시 계획에 따라 상세 정보를 공개합니다.</p></div></div><div class="future-card"><small>B-SERIES / DEVELOPMENT PIPELINE</small><div><h3>Barrier &<br>Wound Care</h3><p>장벽·창상 케어 영역의 향후 연구·개발 파이프라인입니다. 현재 판매 제품이 아닙니다.</p></div></div></div></div></section>
-<section class="section contact" id="contact"><div class="container"><span class="smallcap eyebrow">CONTACT & PARTNERSHIP</span><h2 class="display">LET'S CONNECT.</h2><p>제품 및 비즈니스 협력 문의는 운영사 카이선셀을 통해 안내합니다.</p><div class="contact-actions"><a href="https://www.kaisuncell.com/" target="_blank" rel="noopener noreferrer">KAISUNCELL WEBSITE ↗</a><a href="mailto:planus253@naver.com?subject=CLRX%20Inquiry">EMAIL INQUIRY ↗</a></div></div></section>
+<section class="home-section home-about" aria-labelledby="home-about-title"><div class="container home-split">
+<div><span class="smallcap eyebrow">ABOUT CLRX</span><h2 id="home-about-title" class="display">CARE WITH<br>PURPOSE.</h2><h3>모든 케어에는 분명한 목적이 있어야 합니다.</h3><p>CLRX는 두피와 피부의 상태, 관리 목적과 사용 환경을 고려해 제품의 역할을 설계합니다.</p><p>전문적인 관리부터 일상 속 케어까지, 과학적 접근을 바탕으로 새로운 관리 경험을 제안합니다.</p><a class="link-arrow" href="./about/">ABOUT US</a></div>
+<figure class="home-figure"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261104-042045-rectangle-1-7775fe17.webp" alt="두피에 앰플을 사용하는 섬세한 케어 이미지" class="" loading="lazy" decoding="async"></figure>
+</div></section>
+<section class="home-section home-technology" aria-labelledby="home-tech-title"><div class="container home-split">
+<figure class="home-figure"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261104-042046-rectangle-2-2d23970a.webp" alt="두피·피부 소재 기술을 표현하는 입체적인 마이크로 구조 이미지" class="" loading="lazy" decoding="async"></figure>
+<div><span class="smallcap eyebrow">CORE TECHNOLOGY · CTSol-CLRX™</span><h2 id="home-tech-title" class="display">ROOTED<br>IN SCIENCE.</h2><h3>소재 연구에서 제품 경험까지.</h3><p>CLRX는 CTSol-CLRX™를 중심으로 소재의 특성과 활용 가능성을 탐구합니다. 연구에서 시작된 기술적 접근을 두피와 피부의 관리 환경에 맞는 제품으로 연결합니다.</p><div class="tech-tokens"><span>MATERIAL</span><span>FORMULATION</span><span>APPLICATION</span></div><a class="link-arrow" href="./technology/">DISCOVER TECHNOLOGY</a></div>
+</div></section>
+<section class="home-section home-products" aria-labelledby="home-products-title"><div class="container">
+<div class="section-head"><div><span class="smallcap eyebrow">PRODUCT COLLECTION</span><h2 id="home-products-title" class="display">THE S-SERIES.</h2></div><p>두피 케어의 각 단계를 연결하다. 세정부터 컨디셔닝, 집중 보습까지 CLRX의 제품을 만나보세요.</p></div>
+<div class="product-grid">
+<article class="product-card"><div class="product-image"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261104-042042-image-1-c5133f44.webp" alt="물결을 따라 표현한 CLRX 블랙 세정 제품 연출 이미지" class="" loading="lazy" decoding="async"><span class="product-code">S-01</span></div><div class="product-body"><span class="category">SCALP CLEANSING</span><h3>Micro-Prep Purifier</h3><p>두피와 모발의 청결한 컨디션을 위한 세정 케어.</p><a class="link-arrow" href="./products/s-01/">VIEW PRODUCT</a></div></article>
+<article class="product-card"><div class="product-image"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261104-042044-image-2-d56ca674.webp" alt="실버 라벨이 적용된 블랙 토닉 용기 연출 이미지" class="" loading="lazy" decoding="async"><span class="product-code">S-02</span></div><div class="product-body"><span class="category">SCALP CONDITIONING</span><h3>Scalp Lock-in Tonic</h3><p>일상적인 두피 컨디셔닝을 위한 토닉 케어.</p><a class="link-arrow" href="./products/s-02/">VIEW PRODUCT</a></div></article>
+<article class="product-card"><div class="product-image"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261104-042044-micro-structure-0de8cebd.webp" alt="실버 앰플을 손으로 잡은 집중 관리 제품 연출 이미지" class="" loading="lazy" decoding="async"><span class="product-code">S-02a</span></div><div class="product-body"><span class="category">INTENSIVE SCALP CARE</span><h3>Scalp Lock-in Ampoule</h3><p>집중적인 보습과 두피 컨디셔닝을 위한 앰플 케어.</p><a class="link-arrow" href="./products/s-02a/">VIEW PRODUCT</a></div></article>
+</div><p class="science-disclaimer">※ 연출 이미지는 제품 콘셉트 사진이며 최종 패키지·용기 사양과 다를 수 있습니다.</p><a class="link-arrow" href="./products/" style="margin-top:28px">ALL PRODUCTS</a>
+</div></section>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a href="./"><img src="./assets/clrx-logo.svg" alt="CLRX"></a><p>Science Beyond Care.<br>Scalp-first, science-driven care.</p></div><nav class="footer-nav" aria-label="푸터 메뉴"><a href="./about/">ABOUT US</a><a href="./technology/">TECHNOLOGY</a><a href="./products/">PRODUCTS</a><a href="./science/">SCIENCE</a><a href="./contact/">CONTACT</a></nav></div><div class="footer-info"><strong>㈜카이선셀 (kaisuncell Co., Ltd.)</strong><br>Water-Soluble CTSF™ 원천기술 기반 바이오 플랫폼 기업<br>본사 : 충청남도 천안시 동남구 단대로 119, 생명공학창업보육센터 310호 (안서동, 단국대학교 천안캠퍼스)<br>서울지사 : 서울특별시 성동구 왕십리로 125, KD운송타워 4층 419호<br>대표자 이메일 : <a href="mailto:planus253@naver.com">planus253@naver.com</a></div><div class="footer-bottom"><span>Copyright © 2026 KAISUNCELL. All rights reserved.</span><span>Corporate information source: <a href="https://www.kaisuncell.com/" target="_blank" rel="noopener noreferrer">kaisuncell.com</a></span></div></div></footer>
 <script>
