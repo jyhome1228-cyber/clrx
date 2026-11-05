@@ -16,3 +16,8 @@
 .clrx-policy a{color:#2b517e;text-decoration:underline;text-underline-offset:3px}
 .clrx-policy .policy-meta{margin-top:30px;color:#718096;font-size:12px}
 @media(max-width:760px){.site-footer .footer-legal{gap:8px 17px}.site-footer .footer-legal a{font-size:11px}.clrx-policy{padding:108px 0 70px}.clrx-policy .policy-container{width:calc(100% - 36px)}.clrx-policy .policy-section{padding:24px 0}.clrx-policy .policy-section h2{font-size:18px}}
+
+/* Keep the existing copyright and legal links on a deliberate responsive footer grid */
+.site-footer .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px 30px}
+.site-footer .footer-bottom .footer-legal{margin-top:0;flex:0 1 auto}
+@media(max-width:760px){.site-footer .footer-bottom{align-items:flex-start;flex-direction:column;gap:13px}.site-footer .footer-bottom .footer-legal{margin-top:4px}}
