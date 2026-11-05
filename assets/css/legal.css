@@ -1,0 +1,18 @@
+/* CLRX legal footer / policy layout */
+.site-footer .footer-legal{display:flex;flex-wrap:wrap;align-items:center;gap:10px 23px;margin-top:20px}
+.site-footer .footer-legal a{font-family:Pretendard,"Apple SD Gothic Neo",sans-serif;font-size:12px;font-weight:400;color:#c4d0df;text-decoration:none;line-height:1.6;transition:color .2s}
+.site-footer .footer-legal a:first-child{font-weight:600;color:#f6f8fc}
+.site-footer .footer-legal a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.clrx-policy{background:#fff;color:#172035;min-height:70vh;padding:158px 0 100px;font-family:Pretendard,"Apple SD Gothic Neo",sans-serif;word-break:keep-all}
+.clrx-policy .policy-container{width:min(calc(100% - 80px),1000px);margin:auto}
+.clrx-policy .policy-eyebrow{font-size:12px;letter-spacing:.15em;color:#73859e;font-weight:600}
+.clrx-policy h1{font-size:clamp(32px,4vw,54px);font-weight:500;letter-spacing:-.05em;margin:14px 0 25px}
+.clrx-policy .policy-lead{font-size:15px;color:#5c6b7e;line-height:1.95;max-width:830px}
+.clrx-policy .policy-review{margin:35px 0 45px;border-top:1px solid #bdc8d6;border-bottom:1px solid #bdc8d6;padding:18px 0;font-size:13px;line-height:1.8;color:#526277}
+.clrx-policy .policy-section{padding:29px 0;border-bottom:1px solid #e3e8ef}
+.clrx-policy .policy-section h2{font-size:21px;line-height:1.5;font-weight:600;letter-spacing:-.03em;margin:0 0 15px}
+.clrx-policy .policy-section p,.clrx-policy .policy-section li{font-size:14px;line-height:1.95;color:#536173;margin:0 0 10px}
+.clrx-policy .policy-section ul{padding-left:20px;margin:0}
+.clrx-policy a{color:#2b517e;text-decoration:underline;text-underline-offset:3px}
+.clrx-policy .policy-meta{margin-top:30px;color:#718096;font-size:12px}
+@media(max-width:760px){.site-footer .footer-legal{gap:8px 17px}.site-footer .footer-legal a{font-size:11px}.clrx-policy{padding:108px 0 70px}.clrx-policy .policy-container{width:calc(100% - 36px)}.clrx-policy .policy-section{padding:24px 0}.clrx-policy .policy-section h2{font-size:18px}}
