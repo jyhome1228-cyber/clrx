@@ -245,6 +245,82 @@ line-height:1.45;min-height:49px;transition:background .2s,color .2s,transform .
 .home-v2 .hero-bottom-note{bottom:14px;right:18px}
 }
 </style>
+<style id="clrx-hero-layout-fix-20261105c">
+/* Preserve native 3000x1147 campaign panorama rather than enlarging it into a tall hero. */
+.home-v2 .hero{
+  height:clamp(500px,38.25vw,735px)!important;
+  min-height:0!important;
+  max-height:735px!important;
+  align-items:center!important;
+  overflow:hidden;
+}
+.home-v2 .clrx-responsive-hero,
+.home-v2 .clrx-responsive-hero .hero-photo{width:100%;height:100%}
+.home-v2 .clrx-responsive-hero .hero-photo{
+  object-fit:cover!important;
+  object-position:50% 50%!important;
+  filter:none!important;
+}
+.home-v2 .hero-content{
+  position:relative;
+  width:min(calc(100% - 80px),1440px);
+  display:flex!important;
+  justify-content:flex-end!important;
+  align-items:center!important;
+  padding:0!important;
+  margin:0 auto;
+  z-index:3;
+}
+.home-v2 .hero-copy{width:44%;max-width:520px}
+.home-v2 .hero::before{
+  background:linear-gradient(90deg,transparent 40%,rgba(4,11,24,.15) 58%,rgba(4,11,24,.7) 100%)!important
+}
+@media(max-width:760px){
+  .home-v2 .hero{
+    height:78svh!important;
+    min-height:560px!important;
+    max-height:760px!important;
+    display:block!important;
+  }
+  .home-v2 .clrx-responsive-hero .hero-photo{
+    object-position:center bottom!important;
+    object-fit:cover!important;
+  }
+  .home-v2 .hero::before{
+    background:linear-gradient(180deg,rgba(3,9,20,.78) 0%,rgba(3,9,20,.48) 34%,transparent 60%)!important;
+  }
+  .home-v2 .hero-content{
+    position:absolute!important;
+    top:105px!important;
+    bottom:auto!important;
+    left:20px!important;
+    right:20px!important;
+    width:auto!important;
+    height:auto!important;
+    margin:0!important;
+    padding:0!important;
+    display:block!important;
+    transform:none!important;
+  }
+  .home-v2 .hero-copy{width:100%!important;max-width:390px!important}
+  .home-v2 .hero h1{
+    font-size:clamp(32px,7.5vw,41px)!important;
+    line-height:1.16!important;
+    margin:0 0 17px!important;
+  }
+  .home-v2 .hero .desc{
+    max-width:345px!important;
+    font-size:13px!important;
+    line-height:1.65!important;
+    margin:0 0 23px!important;
+  }
+  .home-v2 .hero .link-arrow{min-height:43px!important;padding:11px 18px!important}
+}
+@media(max-width:380px){
+  .home-v2 .hero-content{top:95px!important;left:18px!important;right:18px!important}
+  .home-v2 .hero .desc{font-size:12px!important}
+}
+</style>
 </head>
 <body>
 <div id="shared-header"></div>
