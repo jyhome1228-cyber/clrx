@@ -16,7 +16,7 @@
 .site-header .header-inner{width:calc(100% - 36px);gap:12px}
 .site-header .header-logo img{width:125px}
 .site-header .desktop-nav{display:none}
-.site-header .header-side{display:none!important}
+html body .site-header .header-side{display:none!important}
 .site-header .menu-toggle{display:block;margin-left:auto}
 .site-header .mobile-nav{display:none;position:fixed;top:68px;left:0;right:0;background:#08172d;padding:12px 24px 28px;flex-direction:column;box-shadow:0 16px 30px #0005;max-height:calc(100dvh - 68px);overflow-y:auto}
 .site-header .mobile-nav.open{display:flex}
