@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071327"/><stop offset=".62" stop-color="#102847"/><stop offset="1" stop-color="#08172d"/></linearGradient><linearGradient id="silver" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f7f9fc"/><stop offset=".42" stop-color="#b8c4d3"/><stop offset="1" stop-color="#edf1f7"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<circle cx="990" cy="200" r="250" fill="none" stroke="#a4b6d2" stroke-opacity=".13" stroke-width="1"/>
+<circle cx="990" cy="200" r="174" fill="none" stroke="#a4b6d2" stroke-opacity=".2" stroke-width="1"/>
+<path d="M76 80H1124M76 545H1124" stroke="#c1ccdc" stroke-opacity=".26"/>
+<text x="78" y="307" fill="url(#silver)" font-size="140" letter-spacing="11" font-weight="600" font-family="Arial, Helvetica, sans-serif">CLRX</text>
+<text x="84" y="370" fill="#e7ecf4" font-size="28" letter-spacing="7" font-weight="400" font-family="Arial, Helvetica, sans-serif">SCIENCE BEYOND CARE</text>
+<text x="84" y="515" fill="#9cadc4" font-size="18" letter-spacing="3" font-family="Arial, Helvetica, sans-serif">SCALP &amp; SKIN CARE RESEARCH</text>
+<text x="1120" y="515" text-anchor="end" fill="#9cadc4" font-size="18" font-family="Arial, Helvetica, sans-serif">clrx.co.kr</text>
+</svg>
