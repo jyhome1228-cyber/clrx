@@ -215,6 +215,25 @@ line-height:1.45;min-height:49px;transition:background .2s,color .2s,transform .
 .home-v2 .home-products .product-image img.clrx-default{object-fit:contain}
 @media(max-width:760px){.home-v2 .home-products .product-image{height:auto;aspect-ratio:1/1}.product-card,.p-card{min-width:0}.product-image img,.p-card img{max-width:100%}}
 </style>
+
+<style id="clrx-products-image-fix-20261105b">
+/* Explicitly render new packshots above legacy product imagery rules */
+.product-v2 .p-card-image{height:auto!important;aspect-ratio:1/1;background:#fff!important;position:relative;overflow:hidden}
+.product-v2 .p-card-image img.clrx-default,
+.product-v2 .p-card-image img.clrx-hover{width:100%!important;height:100%!important;inset:0;object-position:center!important;display:block}
+.product-v2 .p-card-image img.clrx-default{position:relative;object-fit:contain!important;opacity:1}
+.product-v2 .p-card-image img.clrx-hover{position:absolute;object-fit:cover!important;opacity:0}
+@media(hover:hover) and (pointer:fine){
+.product-v2 .p-card:hover .p-card-image img.clrx-default{opacity:0}
+.product-v2 .p-card:hover .p-card-image img.clrx-hover{opacity:1}
+}
+@media(hover:none),(pointer:coarse){
+.product-v2 .p-card-image img.clrx-default{opacity:1!important}
+.product-v2 .p-card-image img.clrx-hover{display:none!important;opacity:0!important}
+}
+@media(max-width:760px){.product-v2 .p-card-grid{grid-template-columns:1fr}.product-v2 .p-card-image{aspect-ratio:1/1;height:auto!important}}
+</style>
+<!-- CLRX PRODUCTS IMAGE RELEASE 20261105-B / desktop hover and mobile packshot -->
 </head><body><div id="shared-header"></div>
 <script src="../../assets/js/header.js" data-root="../../"></script><main class="product-v2">
 <section class="product-hero"><div class="container"><span class="page-label" style="color:#b2c7e2">PRODUCT COLLECTION</span><h1 class="display">THE S-SERIES.</h1><p>From cleansing and scalp conditioning to intensive moisture care.<br>A CLRX scalp care collection that connects distinct care purposes in one routine.</p></div><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261105-015256-image-553-9a30c130.webp" loading="eager" decoding="async" alt="CLRX product collection campaign visual"></section>
